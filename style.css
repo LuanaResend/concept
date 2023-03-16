@@ -261,7 +261,7 @@ button {
 }
   
 
-@media(min-width: 300px), (max-width: 600px){
+@media (max-width: 600px){
     .buttoncontainer #prev{
         left: 0px;
         top: 60%;
