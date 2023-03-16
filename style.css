@@ -322,3 +322,17 @@ button {
     }
 }
 
+@media(max-width: 400px){
+    .buttoncontainer #prev{
+      left: 0px;
+      top: 60%;
+    }
+
+    .logo {
+      left: 2px;
+    }
+
+    button {
+        width: 100px;
+    }
+}
