@@ -72,7 +72,7 @@ button {
 }
 
 .containerproje .slide-container .slide .contentproje{
-    flex: 1 1 350px;
+    
     animation: slideContent .4s linear .4s backwards;
 }
 
@@ -132,7 +132,7 @@ button {
     background-size: cover;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -141,7 +141,7 @@ button {
     background-size: cover;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -150,7 +150,7 @@ button {
     background-size: cover;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
     
 }
@@ -160,7 +160,7 @@ button {
     background-size: cover;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -297,7 +297,64 @@ button {
     .slide {
         left: 5%;
     }
-}
+
+    #logo {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 120px;
+        position: fixed; top: -20px;
+        left: 1px;
+        }
+    
+        button {
+    
+            font-size: 15px;
+            width: 100px;
+        }
+
+        section {
+            
+            text-align: center;
+            padding: 1px 1px;
+        }  
+
+        .containerproje .slide-container:nth-child(1) .slide p {
+        
+        width: 70vw;
+        height: 25vh;
+        text-align: center;
+
+        }
+        .containerproje .slide-container:nth-child(2) .slide p {
+            
+            width: 70vw;
+            height: 25vh;
+            text-align: center;
+            
+        }
+            .containerproje .slide-container:nth-child(3) .slide p {
+            
+                width: 70vw;
+                height: 25vh;
+                text-align: center;
+                
+                } 
+                .containerproje .slide-container:nth-child(4) .slide p {
+            
+                    width: 70vw;
+                    height: 25vh;
+                    text-align: center;
+                    
+                    } 
+                    
+        .contentproje {
+            
+            text-align: center;
+        }            
+    }
+
 
 @media(max-width: 700px){
     .buttoncontainer #prev{
@@ -322,17 +379,3 @@ button {
     }
 }
 
-@media(max-width: 400px){
-    .buttoncontainer #prev{
-      left: 0px;
-      top: 60%;
-    }
-
-    .logo {
-      left: 2px;
-    }
-
-    button {
-        width: 100px;
-    }
-}
