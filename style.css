@@ -38,7 +38,6 @@ header {
 
 button {
     right: 50px;
-    width: 200px;
     position: fixed; top: 12px;
     color: #fff;
     font-size: 16px;
@@ -211,18 +210,18 @@ button {
 }
 
 .mainmenubtn {
-    width: 20px;
-    text-align: center;
     position: fixed;
+    width: 50px;
+    height: 50px;
     color: #fff;
-    font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 100%;
+    font-size: 30px;
     background-color: transparent;
-    padding: 10px;
-    right: 5%;
+    padding: 1px ;
+    right: 1px;
+    top: 10px;
     cursor: pointer;
 }
+
 
 .dropdown {
   position: relative;
@@ -232,7 +231,7 @@ button {
   position: fixed;
   text-align: right;
   display: none;
-  background-color: transparent;
+  background-color: #a57ffc;
   min-width: 50px;
   max-width: 200px;
   min-height: 200px;
@@ -266,6 +265,16 @@ button {
         left: 0px;
         top: 60%;
     }
+
+    .mainmenubtn {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        padding: 1px ;
+        right: -5px;
+        top: 10px;
+    
+    }
     
     .dropdown:hover .dropdown-child {
       display: block;
@@ -285,7 +294,9 @@ button {
 
     ion-icon{
       font-size: 25px;
-      display: block;
+      display: inline-block;
+      margin-right: 1px;
+      
     }
     
 
@@ -310,8 +321,8 @@ button {
     
         button {
     
-            font-size: 15px;
-            width: 100px;
+            font-size: 16px;
+            width: 200px;
         }
 
         section {
