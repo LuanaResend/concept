@@ -262,9 +262,7 @@ button {
 
 @media (max-width: 600px){
 
-    body{
-        padding: 0;
-    }
+    
     .buttoncontainer #prev{
         left: 0px;
         top: 60%;
@@ -333,6 +331,7 @@ button {
             
             text-align: center;
             padding: 1px 1px;
+            overflow-x: hidden;
         }  
 
         .containerproje .slide-container:nth-child(1) .slide p {
