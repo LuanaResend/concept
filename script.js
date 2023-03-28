@@ -15,5 +15,5 @@ function prev(){
 
 setInterval(next, 7000);
 
-function menu()
+
 
