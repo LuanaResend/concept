@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 *{
-    
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -13,13 +13,13 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    background-color: #8a005e;
+    background-color: rgb(27,27,27);
 
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 header {
-    padding: 30px 20px;
+    padding: 37px 20px;
     width: 100%;
     background-color: #3a393983;
     box-shadow: 1px 1px 10px 1px #26003536;
@@ -31,14 +31,13 @@ header {
 #logo {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    left: 50px;
     width: 200px;
-    position: fixed; top: -70px;
+    position: fixed; top: -60px;
   }
 
-button {
-    right: 50px;
-    position: fixed; top: 12px;
+  button {
+    position: fixed; top: 17px;
     color: #fff;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -47,9 +46,116 @@ button {
     border-color: transparent;
     background-color: #a742fa;
     padding: 10px;
-    right: 10%;
+    right: 2%;
     cursor: pointer;
     }
+
+
+/*menu*/
+
+.containermenu{
+    width: 100px;
+    margin-right: 50px;
+}
+
+a {text-decoration: none;}
+  
+  .container {
+    margin-right: 0;
+    width: 164vh;
+    text-align: center;
+  }
+  
+  ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+    
+  }
+
+  ul ion-icon{
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  
+  nav {
+    
+    font-size: 0;
+    width: 100%;
+    
+      
+  }
+  
+  nav > ul > li {
+    display: inline-block;
+      font-size: 14px;
+      padding: 0 10px;
+      position: relative;
+  }
+  
+  nav > ul > li > a {
+    color: #bebbbb;
+      display: block;
+      padding: 15px 0;
+      border-bottom: 3px solid transparent;
+      transition: all .3s ease;
+      font-size: 25px;
+      text-align: center;
+  }
+  nav > ul > li:hover > a {
+    color: rgb(255, 255, 255); 
+      border-bottom: 3px solid rgb(255, 255, 255);
+  }
+  
+  .mega-menu {
+      background:  #3a393983;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+      position: absolute;
+      left: 0;
+      width: 1000;
+      padding-bottom: 2px;
+  }
+  .mega-menu h3 {
+    
+    color: #ffffff;
+    margin-top: 5px;
+    
+    
+}
+    
+  
+  .mega-menu .container {
+      display: flex;
+      color: #ffffff;
+      margin-top: 0px;
+      
+      
+  }
+  .mega-menu .item {
+    flex-grow: 1;
+      margin: 0 5px;  
+  }
+  .mega-menu a {
+    border-bottom: 1px solid #ddd;
+      color: #a57ffc;
+      display: block;
+      padding: 5px 0;
+      
+  }
+  .mega-menu a:hover {color: #e5ccfa;}
+  
+  
+  .dropdown {position: static;}
+  
+  .dropdown:hover .mega-menu {
+      visibility: visible;
+      opacity: 1;
+  }
+ /*-------*/
 
 
 .containerproje{
@@ -209,19 +315,6 @@ button {
     right: 20px;
 }
 
-.mainmenubtn {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    font-size: 30px;
-    background-color: transparent;
-    padding: 1px ;
-    right: 1px;
-    top: 10px;
-    cursor: pointer;
-}
-
 
 .dropdown {
   position: relative;
@@ -262,7 +355,9 @@ button {
 
 @media (max-width: 600px){
 
-    
+    nav{
+        width: 0;
+    }
     .buttoncontainer #prev{
         left: 0px;
         top: 60%;
@@ -318,7 +413,7 @@ button {
         align-items: center;
         width: 120px;
         position: fixed; top: -20px;
-        left: 1px;
+        left: 30px;
         }
     
         button {
@@ -381,7 +476,8 @@ button {
       top: 60%;
     }    
     .slide {
-      left: 5%;
+      
+      background: #a742fa;
     }
     .containerproje .buttoncontainer .slide-container .slide .contentproje p{
         font-size: 16px;

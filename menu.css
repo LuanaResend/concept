@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+      font-family: sans-serif;
+      background-image: linear-gradient(to right, rgb(27,27,27), purple);
+      
+  }
+  
+  a {text-decoration: none;}
+  
+  .container {
+    margin: auto;
+    width: 1000px;
+  }
+  
+  ul {
+    padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    list-style: none;
+  }
+  
+  nav {
+    background: transparent;
+    font-size: 0;
+    position: relative;
+    width: 100%;
+    text-align: right;
+      
+  }
+  
+  nav > ul > li {
+    display: inline-block;
+      font-size: 14px;
+      padding: 0 10px;
+      position: relative;
+  }
+  
+  nav > ul > li > a {
+    color: #bebbbb;
+      display: block;
+      padding: 15px 0;
+      border-bottom: 3px solid transparent;
+      transition: all .3s ease;
+      font-size: 25px;
+      text-align: center;
+  }
+  nav > ul > li:hover > a {
+    color: rgb(255, 255, 255); 
+      border-bottom: 3px solid rgb(255, 255, 255);
+  }
+  
+  .mega-menu {
+      background:  #ffffff83;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding-bottom: 10px;
+  }
+  .mega-menu h3 {
+    
+    color: #ffffff;
+    margin-top: 5px;
+    
+}
+    
+  
+  .mega-menu .container {
+      display: flex;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 0px;
+  }
+  .mega-menu .item {
+    flex-grow: 1;
+      margin: 0 5px;  
+  }
+  .mega-menu a {
+    border-bottom: 1px solid #ddd;
+      color: purple;
+      display: block;
+      padding: 5px 0;
+      
+  }
+  .mega-menu a:hover {color: #ffffff;}
+  
+  
+  .dropdown {position: static;}
+  
+  .dropdown:hover .mega-menu {
+      visibility: visible;
+      opacity: 1;
+  }
