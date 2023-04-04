@@ -50,6 +50,10 @@ header {
     cursor: pointer;
     }
 
+    button:hover{
+      background-color: #a57ffc;
+    }
+
 
 /*menu*/
 
@@ -116,7 +120,6 @@ a {text-decoration: none;}
       transition: visibility 0s, opacity 0.5s linear;
       position: absolute;
       left: 0;
-      width: 1000;
       padding-bottom: 2px;
   }
   .mega-menu h3 {
@@ -132,12 +135,13 @@ a {text-decoration: none;}
       display: flex;
       color: #ffffff;
       margin-top: 0px;
+      max-width: 100%;
       
       
   }
   .mega-menu .item {
     flex-grow: 1;
-      margin: 0 5px;  
+      margin: 0 1px;  
   }
   .mega-menu a {
     border-bottom: 1px solid #ddd;
@@ -320,40 +324,9 @@ a {text-decoration: none;}
   position: relative;
   display: inline-block;
 }
-.dropdown-child {
-  position: fixed;
-  text-align: right;
-  display: none;
-  background-color: #a57ffc;
-  min-width: 50px;
-  max-width: 200px;
-  min-height: 200px;
-  right: 2px;
-  
-}
-.dropdown-child a {
-  color: #ffffff;
-  margin-top: 25px;
-  margin-right: 1px;
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  border-radius: 20px;
-}
-.dropdown:hover .dropdown-child {
-  display: block;
-  
-}
-
-.dropdown-child:hover a{
-  display: block;
-  background-color: #a47ffc7e;
-  
-}
   
 
-@media (max-width: 600px){
+@media (max-width: 700px){
 
     nav{
         width: 0;
@@ -366,16 +339,6 @@ a {text-decoration: none;}
     .buttoncontainer #next{
         right: 0px;
         top: 60%;
-    }
-
-    .mainmenubtn {
-        width: 50px;
-        height: 50px;
-        font-size: 30px;
-        padding: 1px ;
-        right: -5px;
-        top: 10px;
-    
     }
     
     .dropdown:hover .dropdown-child {
@@ -403,6 +366,7 @@ a {text-decoration: none;}
     
 
     .slide {
+        top: 10%;
         left: 5%;
     }
 
@@ -456,16 +420,22 @@ a {text-decoration: none;}
                     height: 25vh;
                     text-align: center;
                     
-                    } 
-                    
+                    }           
         .contentproje {
             
             text-align: center;
-        }            
+        } 
+        
+        .mega-menu .container {
+          width: 100vw;
+        }
+        .mega-menu {
+          margin-top: -2px;
+        }
     }
 
 
-@media(max-width: 700px){
+@media(min-width: 700px){
     .buttoncontainer #prev{
       left: 0px;
       top: 60%;
@@ -476,8 +446,7 @@ a {text-decoration: none;}
       top: 60%;
     }    
     .slide {
-      
-      background: #a742fa;
+      top: 10%;  
     }
     .containerproje .buttoncontainer .slide-container .slide .contentproje p{
         font-size: 16px;
@@ -487,5 +456,9 @@ a {text-decoration: none;}
         height: 10%;
     
     }
+
+    .mega-menu .container {
+      width: 100vw;
+    }   
 }
 
