@@ -13,6 +13,7 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     background-color: rgb(27,27,27);
 
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -394,11 +395,45 @@ a {text-decoration: none;}
             overflow-x: hidden;
         }  
 
+        .containerproje .slide-container:nth-child(1) .slide h3 {
+          text-align: center;
+          margin-bottom: 6vh;
+          margin-left: -22px;
+          margin-right: 22px;
+          font-size: 30px;
+        }
+
+        
+        .containerproje .slide-container:nth-child(2) .slide h3 {
+          text-align: center;
+          margin-bottom: 6vh;
+          font-size: 30px;
+        }
+
+        
+        .containerproje .slide-container:nth-child(3) .slide h3 {
+          text-align: center;
+          margin-bottom: 6vh;
+          margin-left: -22px;
+          margin-right: 22px;
+          font-size: 30px;
+        }
+
+        
+        .containerproje .slide-container:nth-child(4) .slide h3 {
+          text-align: center;
+          margin-bottom: 6vh;
+          margin-left: -22px;
+          margin-right: 22px;
+          font-size: 30px;
+        }
+
         .containerproje .slide-container:nth-child(1) .slide p {
         
         width: 70vw;
         height: 25vh;
         text-align: center;
+        font-size: 15px;
 
         }
         .containerproje .slide-container:nth-child(2) .slide p {
@@ -406,6 +441,7 @@ a {text-decoration: none;}
             width: 70vw;
             height: 25vh;
             text-align: center;
+            font-size: 15px;         
             
         }
             .containerproje .slide-container:nth-child(3) .slide p {
@@ -413,6 +449,7 @@ a {text-decoration: none;}
                 width: 70vw;
                 height: 25vh;
                 text-align: center;
+                font-size: 15px;                
                 
                 } 
                 .containerproje .slide-container:nth-child(4) .slide p {
@@ -420,11 +457,13 @@ a {text-decoration: none;}
                     width: 70vw;
                     height: 25vh;
                     text-align: center;
+                    font-size: 15px;
                     
                     }           
         .contentproje {
             
             text-align: center;
+            height: 50vh;
         } 
         
         .mega-menu .container {
@@ -436,7 +475,11 @@ a {text-decoration: none;}
 
         
     .containerproje .slide-container .slide .contentproje .bntproj{
-      margin-top: 10vh;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      
+     
+     
     }
   }
 

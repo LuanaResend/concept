@@ -59,7 +59,9 @@ header {
     color: #fff;
  }
 
- .contentproje h1 {
+
+
+  .contentproje h1 {
     color: #a742fa;
     margin-top: 10%;
     margin-left: 10%;
@@ -78,12 +80,14 @@ header {
         margin-top: -2px;
       }
 
-      .contentproje p{
-    
-     font-size: 15px;
+    .contentproje p{
+     font-size: 13px;
+     margin-top: 2px;
+
     }
     .contentproje h1{
         font-size: 25px;
+        margin-top: 5px;
     }
   }
   @media (min-width: 700px){
